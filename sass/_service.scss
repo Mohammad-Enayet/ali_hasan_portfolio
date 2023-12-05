@@ -1,0 +1,30 @@
+#service_area{
+ background: $bgColor;
+ .child_service{
+  flex-basis: 32%;
+  background-color: $whiteColor;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  transition: .5s;
+  i{
+   font-size: 45px;
+   margin-bottom: 20px;
+   color: $pColor;
+  }
+  h4{
+   color: $bkColor;
+   font-size: 25px;
+   text-transform: uppercase;
+  }
+  &:hover{
+   background: $bkColor;
+   i{
+    color: $sColor;
+   }
+   h4,p{
+    color: $whiteColor;
+   }
+  }
+ }
+}

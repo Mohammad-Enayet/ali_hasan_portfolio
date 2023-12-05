@@ -1,0 +1,59 @@
+#about_area{
+ .about_numbers{
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .child_about{
+   flex-basis: 48%;
+   text-align: center;
+   background: $bgColor;
+   border-radius: 10px;
+   margin-bottom: 25px;
+   padding: 40px;
+   h4{
+    color: $bkColor;
+    margin-bottom: 0;
+    font: {
+     size: 45px;
+     weight: $fontWXL;
+    }
+   }
+   h6{
+    color: $bkColor;
+    font: {
+     size: 16px;
+     weight: $fontWMD;
+    }
+    line-height: 1em;
+    margin-bottom: 0;
+   }
+  }
+ }
+ .about_info{
+  flex-basis: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3{
+    color: $bkColor;
+    font: {
+     size: 35px;
+     weight: $fontWXL;
+    }
+    line-height: 1em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+   }
+  h5{
+    color: $bkColor;
+    font: {
+     size: 20px;
+     weight: $fontWXL;
+    }
+    line-height: 1em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+   }
+ }
+}

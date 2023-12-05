@@ -1,0 +1,258 @@
+// Laptop Screen
+@media only screen and (min-width: 1200px) and (max-width: 1410px) {
+  .container {
+    width: 1140px;
+  }
+  #project_area {
+    .project_x {
+      grid-column: auto / span 1;
+    }
+    .project_y {
+      grid-row: auto/ span 1;
+    }
+    .project_xy {
+      grid-column: auto / span 1;
+      grid-row: auto/ span 1;
+    }
+  }
+  #contact_area .contact_info div {
+    padding: 40px 25px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Tablet Screen
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 96%;
+  }
+  #project_area {
+    .project_x {
+      grid-column: auto / span 1;
+    }
+    .project_y {
+      grid-row: auto/ span 1;
+    }
+    .project_xy {
+      grid-column: auto / span 1;
+      grid-row: auto/ span 1;
+    }
+  }
+  #contact_area .contact_info div {
+    padding: 20px 15px;
+  }
+  #header_area .top_header_area {
+    .social_area ul li {
+      margin-left: 5px;
+    }
+    .social_area ul a {
+      padding-top: 12px;
+    }
+    .container.inner {
+      div {
+        flex-basis: 20%;
+        &:first-child,
+        &:last-child {
+          flex-basis: 30%;
+        }
+        p {
+          text-align: center;
+          font-size: 13px;
+        }
+        i {
+          display: block;
+        }
+      }
+    }
+  }
+  #hero_area {
+    .inner {
+      flex-direction: column;
+    }
+    .admin_info {
+      flex-basis: 100%;
+      padding: 20px;
+      order: 2;
+    }
+    .admin_image {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+  #about_area .about_numbers .child_about {
+    padding: 25px 20px;
+  }
+  #service_area .child_service {
+    padding: 25px 20px;
+  }
+  #contact_area {
+    .inner,
+    .contact_info {
+      flex-direction: column;
+    }
+    .contact_info {
+      div {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      iframe {
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Mobile Screen
+@media only screen and (min-width: $small) and (max-width: $medium) {
+  // Header Area Style
+  #header_area {
+    // Top Header Area Style
+    .top_header_area {
+      .address,
+      .phone_number,
+      .email_address {
+        display: none;
+      }
+      .mobile_bar {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        i {
+          color: $whiteColor;
+          font-size: 25px;
+          cursor: pointer;
+        }
+      }
+      .inner {
+        display: block;
+        .social_area {
+          ul {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    // Main Header Style
+    .main_header {
+      .logo_area {
+        width: 200px;
+        margin: 0 auto;
+      }
+      .inner {
+        display: block;
+      }
+    }
+  }
+
+  // Hero Area Style
+  #hero_area {
+    .inner {
+      flex-direction: column;
+    }
+    .admin_info {
+      flex-basis: 100%;
+      h2 {
+        font-size: 35px;
+      }
+      padding: 20px;
+      order: 2;
+    }
+    .admin_image {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+
+  // About Area Style
+  #about_area {
+    .inner {
+      flex-direction: column;
+    }
+    .about_numbers {
+      flex-basis: 100%;
+      .child_about {
+        h4 {
+          font-size: 25px;
+        }
+        h6 {
+          font-size: 14px;
+        }
+      }
+    }
+    .about_info {
+      flex-basis: 100%;
+      padding: 20px;
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  // Service Area Style
+  #service_area {
+    .inner {
+      flex-direction: column;
+      .child_service {
+        margin-bottom: 20px;
+        padding: 20px;
+        i {
+          margin-bottom: 10px;
+        }
+        h4 {
+          margin-bottom: 10px;
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // Project Area Style
+  #project_area {
+    .inner_grid {
+      display: block;
+      .child_project {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // Blog Area Style
+  #blog_area {
+    .inner {
+      flex-direction: column;
+      .child_blog {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  // Contact Area Style
+  #contact_area {
+    .inner,
+    .contact_info {
+      flex-direction: column;
+    }
+    .contact_info {
+      div {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      iframe {
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

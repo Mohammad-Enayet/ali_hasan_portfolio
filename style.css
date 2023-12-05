@@ -1,0 +1,48 @@
+/*================================================ 
+My Custom CSS
+==================================================*/
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+.inner_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  grid-auto-flow: dense;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ul li {
+  display: inline-block;
+}
+a {
+  transition: 0.5s;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.text_center {
+  text-align: center;
+}

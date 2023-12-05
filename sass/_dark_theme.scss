@@ -1,0 +1,150 @@
+$darkBgColor: #1f1f1f;
+$darkSColor: #262626;
+
+body.dark {
+  .social_area {
+    ul {
+      li {
+        a {
+          &:hover {
+            background-color: $whiteColor;
+            color: $bkColor;
+          }
+        }
+      }
+    }
+  }
+  .btn_cta{
+   &:hover{
+    background-color: $whiteColor;
+    color: $darkBgColor;
+   }
+  }
+  #header_area {
+    .top_header_area {
+      background-color: $darkBgColor;
+    }
+    .main_header {
+      background-color: $darkSColor;
+      .main_menu {
+        ul {
+          li {
+            a {
+              color: $sColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  #hero_area {
+    background-color: $darkBgColor;
+    .admin_info {
+      h2,
+      h5,
+      p {
+        color: $whiteColor;
+      }
+    }
+  }
+  #about_area {
+    background-color: $darkSColor;
+    .container.text_center {
+      color: $whiteColor;
+    }
+    .about_numbers {
+      .child_about {
+        background: $darkBgColor;
+        h4,
+        h6 {
+          color: $sColor;
+        }
+      }
+    }
+    .about_info {
+      color: $whiteColor;
+      h5,
+      h3 {
+        color: $whiteColor;
+      }
+    }
+  }
+  #service_area {
+    background: $darkBgColor;
+    .container.text_center {
+      color: $whiteColor;
+    }
+    .child_service {
+      background: $darkSColor;
+      box-shadow: none;
+      h4 {
+        color: $sColor;
+      }
+      p {
+        color: $whiteColor;
+      }
+    }
+  }
+  #project_area {
+    background-color: $darkSColor;
+    .container.text_center {
+      color: $whiteColor;
+    }
+  }
+  #blog_area {
+    background: $darkBgColor;
+    .container.text_center {
+      color: $whiteColor;
+    }
+    .child_blog {
+      .blog_info {
+        background: $darkSColor;
+        h4 {
+          a {
+            color: $whiteColor;
+          }
+        }
+        p {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  #contact_area {
+    background-color: $darkSColor;
+    .container.text_center {
+      color: $whiteColor;
+    }
+    .contact_info {
+      div {
+        background-color: $darkBgColor;
+
+        p {
+          color: $whiteColor;
+        }
+      }
+    }
+    .contact_form {
+      flex-basis: 38%;
+      input,
+      textarea {
+        background-color: $darkBgColor;
+        border-color: $darkBgColor;
+        color: $whiteColor;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type='submit'] {
+        background: $pColor;
+        &:hover{
+         background: $whiteColor;
+         color: $darkBgColor;
+        }
+      }
+    }
+  }
+  #footer_area{
+   background-color: $darkBgColor;
+  }
+}
